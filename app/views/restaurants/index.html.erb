@@ -1,0 +1,11 @@
+<h1>Restaurants 🚀</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+
+<a href="/restaurants/1">Chez Gladines</a>
+<a href="/restaurants/2">Le Temps des Cerises</a>
+<a href="/restaurants/3">La Tour d'Argent</a>
